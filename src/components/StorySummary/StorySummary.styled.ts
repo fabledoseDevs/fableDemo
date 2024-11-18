@@ -1,4 +1,6 @@
+import { ArrowLeft } from '@styled-icons/fa-solid/ArrowLeft';
 import Image from 'next/image';
+import Link from 'next/link';
 import ReactPlayer from 'react-player/lazy';
 import styled, { css } from 'styled-components';
 
@@ -231,4 +233,21 @@ export const TagListPositioner = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+`;
+
+export const BackLink = styled(Link)`
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.palette.green};
+  transition: all 5ms ease-in-out;
+
+  &:hover {
+    color: ${({ theme }) => theme.palette.lightergreen};
+  }
+`;
+export const ArrowLeftIcon = styled(ArrowLeft)`
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 `;
