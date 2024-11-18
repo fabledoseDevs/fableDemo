@@ -14,6 +14,8 @@ import { StorySummaryTranslations, useTranslation } from '@/translations';
 
 import {
   AnimatedPicture,
+  ArrowLeftIcon,
+  BackLink,
   BlurPicture,
   BookExcerpt,
   ButtonsContainer,
@@ -51,6 +53,7 @@ export const StorySummary: StorySummaryType = ({
     adaptation: adaptationAuthors,
     illustrations: illustrationAuthors,
     readCTA,
+    backToHomepage,
   } = useTranslation(StorySummaryTranslations);
 
   const removeLoadingScreen = () => {
@@ -90,6 +93,10 @@ export const StorySummary: StorySummaryType = ({
         </LogoPositioner>
         <SummaryCard $decor={coverDecor}>
           <MainContent>
+            <BackLink href="/">
+              <ArrowLeftIcon />
+              {backToHomepage}
+            </BackLink>
             <Title>{bookTitle}</Title>
             <Credits>
               {author && (
