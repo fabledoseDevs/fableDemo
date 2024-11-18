@@ -96,6 +96,7 @@ interface StorySummaryTT {
   adaptation: string;
   illustrations: string;
   readCTA: string;
+  backToHomepage: string;
 }
 
 interface SubstackButtonTT {

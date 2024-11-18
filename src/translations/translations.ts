@@ -340,12 +340,14 @@ export const StorySummaryTranslations: StorySummaryTranslation = {
     adaptation: 'Adaptation:',
     illustrations: 'Illustrations:',
     readCTA: 'Read Fable',
+    backToHomepage: 'Back to homepage',
   },
   pl: {
     author: 'Autor:',
     adaptation: 'Adaptacja:',
     illustrations: 'Ilustracje:',
     readCTA: 'Czytaj Bajkę',
+    backToHomepage: 'Powrót do strony głównej',
   },
 };
 
